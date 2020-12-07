@@ -70,14 +70,14 @@ char* ReadProcEntry(char *filename)
 	return real_boxtype_name;
 }
 
-char *_getVisionVersion()
+char *_getOpenFIXVersion()
 {
-	return strdup(VISIONVERSION);
+	return strdup(OPENFIXVERSION);
 }
 
-char *_getVisionRevision()
+char *_getOpenFIXRevision()
 {
-	return strdup(VISIONREVISION);
+	return strdup(OPENFIXREVISION);
 }
 
 char *_getDeveloperName()
