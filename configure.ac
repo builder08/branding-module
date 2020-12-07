@@ -1,4 +1,4 @@
-AC_INIT([openvision-branding-module],[7.0])
+AC_INIT([openfix-branding-module],[7.0])
 AM_INIT_AUTOMAKE([dist-bzip2 foreign no-define tar-pax])
 AC_CONFIG_HEADERS([enigma2-plugins-config.h])
 
@@ -22,20 +22,20 @@ AM_PATH_PYTHON
 AX_PYTHON_DEVEL
 AX_PTHREAD
 
-AC_ARG_WITH(visionversion,
-	[  --with-visionversion=NUMBER vision version [[number,...]]],
-	[VISIONVERSION="$withval"],[VISIONVERSION=""])
-AC_SUBST(VISIONVERSION)
-AC_DEFINE_UNQUOTED(VISIONVERSION,"$VISIONVERSION",[vision version])
+AC_ARG_WITH(openfixversion,
+	[  --with-openfixversion=NUMBER openfix version [[number,...]]],
+	[OPENFIXVERSION="$withval"],[OPENFIXVERSION=""])
+AC_SUBST(OPENFIXVERSION)
+AC_DEFINE_UNQUOTED(OPENFIXVERSION,"$OPENFIXVERSION",[openfix version])
 
-AC_ARG_WITH(visionrevision,
-	[  --with-visionrevision=NUMBER vision revision [[number,...]]],
-	[VISIONREVISION="$withval"],[VISIONREVISION=""])
-AC_SUBST(VISIONREVISION)
-AC_DEFINE_UNQUOTED(VISIONREVISION,"$VISIONREVISION",[vision revision])
+AC_ARG_WITH(openfixrevision,
+	[  --with-openfixrevision=NUMBER openfix revision [[number,...]]],
+	[OPENFIXREVISION="$withval"],[OPENFIXREVISION=""])
+AC_SUBST(OPENFIXREVISION)
+AC_DEFINE_UNQUOTED(OPENFIXREVISION,"$OPENFIXREVISION",[openfix revision])
 
 AC_ARG_WITH(developername,
-	[  --with-developername=NAME developer name [[persianprince,...]]],
+	[  --with-developername=NAME developer name [[user,...]]],
 	[DEVELOPERNAME="$withval"],[DEVELOPERNAME=""])
 AC_SUBST(DEVELOPERNAME)
 AC_DEFINE_UNQUOTED(DEVELOPERNAME,"$DEVELOPERNAME",[developer name])
